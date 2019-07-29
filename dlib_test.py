@@ -88,7 +88,7 @@ if __name__ == "__main__":
 		bgr_img = cv2.imread(os.path.join(data_path, _), 1)
 		rgb_img = cv2.cvtColor(bgr_img, cv2.COLOR_BGR2RGB)
 		# detect_with_hog(hog_detector, rgb_img, 300)
-		# detect_with_cnn(cnn_d       etector, rgb_img, 300)
+		# detect_with_cnn(cnn_detector, rgb_img, 300)
 		align_face(hog_detector, five_landmarks_predictor, rgb_img, 300)
 		# show_landmarks(hog_detector, five_eight_landmarks_predictor, rgb_img, 300)
 		shape = show_landmarks(hog_detector, sixty_eight_landmarks_predictor, bgr_img, 300)
