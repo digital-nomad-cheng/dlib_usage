@@ -7,11 +7,11 @@ import cv2
 from facealigner import FaceAligner
 
 
-data_path = "/Users/yuhua.cheng/Documents/dataset/ethnicity_v1/0"
-cnn_face_detector_model_path = '/Users/yuhua.cheng/PycharmProjects/model/mmod_human_face_detector.dat'
-five_landmarks_model_path = '/Users/yuhua.cheng/PycharmProjects/model/shape_predictor_5_face_landmarks.dat'
-sixty_eight_landmarks_model_path = '/Users/yuhua.cheng/PycharmProjects/model/shape_predictor_68_face_landmarks.dat'
-face_embedding_model_path = '/Users/yuhua.cheng/PycharmProjects/model/dlib_face_recognition_resnet_model_v1.dat'
+data_path = "./dataset/"
+cnn_face_detector_model_path = './model/mmod_human_face_detector.dat'
+five_landmarks_model_path = './model/shape_predictor_5_face_landmarks.dat'
+sixty_eight_landmarks_model_path = './model/shape_predictor_68_face_landmarks.dat'
+face_embedding_model_path = './model/dlib_face_recognition_resnet_model_v1.dat'
 
 def detect_with_hog(detector, img, height=512, width=0):
 	w, h, c = img.shape
